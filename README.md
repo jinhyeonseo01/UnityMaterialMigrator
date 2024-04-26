@@ -6,8 +6,9 @@
 
 ![guide](./docs/guide_gui_1.gif)  
 
+
 - [UnityMaterialMigrator](#unitymaterialmigrator)
-  - [Guide](#guide)
+- [Guide](#guide)
     - [Step 1:](#step-1)
     - [Step 2:](#step-2)
     - [Step 3:](#step-3)
@@ -16,7 +17,7 @@
 
 2023 University (한국공학대학교 3학년 1학기) Script Language - 1차 Project
 * * *
-## Guide  
+# Guide  
 ### Step 1:
 ![guide](./docs/guide_main_1.png)  
 - Path Setting: Select the root folder containing the Materials to be changed.
