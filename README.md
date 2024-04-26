@@ -1,4 +1,4 @@
-# UnityMaterialMigrator
+# Unity Material Migrator
   
 **This is a tool that relinks incorrect Reference IDs of Materials in Unity.**  
 *유니티에서 Mateiral들의 잘못된 Reference ID를 다시 링크 시켜주는 툴 입니다.*  
@@ -7,7 +7,7 @@
 ![guide](./docs/guide_gui_1.gif)  
 
 
-- [UnityMaterialMigrator](#unitymaterialmigrator)
+- [Unity Material Migrator](#unity-material-migrator)
 - [Guide](#guide)
     - [Step 1:](#step-1)
     - [Step 2:](#step-2)

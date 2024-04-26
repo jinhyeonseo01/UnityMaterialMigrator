@@ -115,7 +115,7 @@ class App(ct.CTk):
         super().__init__()
 
         self.image_none = ct.CTkImage(Image.open('./images/image_icon_light.png'), size=(30, 30))
-
+        self.iconbitmap("./images/icon.ico")
         self.projectPath = 'C:\\'
         self.valid_projectPath = ct.BooleanVar(value=False)
         self.valid_projectPath.trace_add('write', self.valid_projectPath_var)
