@@ -158,13 +158,13 @@ class App(ct.CTk):
         self.sidebar_Label = ct.CTkLabel(self.sidebar_frame, text="Material\nMigrator", width=260, height=150, font=ct.CTkFont(size=34, weight="bold"))
         self.sidebar_Label.grid(row=0,column=0,padx=(5,5),pady=(5,5), sticky="ew")
 
-        self.sidebar_CommandScroll = ct.CTkScrollableFrame(master=self.sidebar_frame,label_text="Command Records",
+        self.sidebar_CommandScroll = ct.CTkScrollableFrame(master=self.sidebar_frame,label_text="Command History",
                               label_font=ct.CTkFont(size=20, weight="bold"))
         self.sidebar_CommandScroll.grid(row=1, column=0, padx=(10, 10), pady=(10, 10), sticky="nsew")
         self.sidebar_CommandList = []
         self.sidebar_CommandLabel = []
 
-        self.sidebar_Rollback_Button = ct.CTkButton(master=self.sidebar_frame, text="Rollback", height=65, font=ct.CTkFont(size=24),
+        self.sidebar_Rollback_Button = ct.CTkButton(master=self.sidebar_frame, text="Revert", height=65, font=ct.CTkFont(size=24),
                                  command=lambda: self.LastUnDoCommand())
         self.sidebar_Rollback_Button.grid(row=2, column=0, padx=(10, 10), pady=(10, 10), sticky="sew")
 
@@ -185,10 +185,10 @@ class App(ct.CTk):
             nowButton.configure(state=ct.DISABLED)
             self.topbar_buttons.append(nowButton)
 
-        self.topbar_buttons[0].configure(state=ct.NORMAL, text="Material Load")
-        self.topbar_buttons[1].configure(text="Property Modity")
-        self.topbar_buttons[2].configure(text="Converting")
-        self.topbar_buttons[3].configure(text="Complate")
+        self.topbar_buttons[0].configure(state=ct.NORMAL, text="Materials Load")
+        self.topbar_buttons[1].configure(text="Modify Properties")
+        self.topbar_buttons[2].configure(text="Convert Setting")
+        self.topbar_buttons[3].configure(text="Completed")
 
         self.topbar_buttons[0].configure(command = lambda: self.GotoStep(0))
         self.topbar_buttons[1].configure(command = lambda: self.GotoStep(1))
@@ -316,7 +316,7 @@ class App(ct.CTk):
         self.step2_rightOption_Frame.grid_rowconfigure((0), weight=1)
 
         self.step2_CommandCreateSwitch_Var = ct.BooleanVar(value=True)
-        self.step2_CommandCreateSwitch = ct.CTkSwitch(master=self.step2_rightOption_Frame, text="Create Commend", font=ct.CTkFont(size=18), variable=self.step2_CommandCreateSwitch_Var)
+        self.step2_CommandCreateSwitch = ct.CTkSwitch(master=self.step2_rightOption_Frame, text="Create Command", font=ct.CTkFont(size=18), variable=self.step2_CommandCreateSwitch_Var)
         self.step2_CommandCreateSwitch.grid(row=0,column=0,padx=(10,10),pady=(10, 10), sticky="w")#, sticky="nsew"
 
         self.step2_NextStep3_Button = ct.CTkButton(master=self.step2_rightOption_Frame, height=100, font=ct.CTkFont(size=28), text='Next', command=lambda :self.GotoStep(3))
